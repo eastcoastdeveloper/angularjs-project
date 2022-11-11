@@ -1,0 +1,2273 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide {
+    display: none !important;
+}
+[ng-cloak] {
+    display: none !important;
+}
+* {
+    font-family: "Open Sans", sans-serif;
+}
+#appNav {
+    overflow: auto;
+    margin: 0;
+}
+#appNav .apiBtn {
+    display: none;
+}
+#accordion {
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+#appNav li {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#appNav li a {
+    font-size: 14px;
+    padding: 10px 15px;
+    color: white;
+}
+#appNav #itineraries, #appNav #stateroom {
+    display: none;
+}
+body {
+    padding: 0;
+    height: calc(100vh - 35px);
+    width: calc(100% - 20px);
+    margin: 0 10px;
+}
+.hamburger {
+    display: none;
+}
+nav {
+    background-color: #457b9d;
+    height: 45px;
+}
+.row-fluid {
+    display: grid;
+    grid-template-columns: repeat(3,calc(33.3% - 10px));
+    grid-column-gap: 15px;
+    margin: 15px 15px 0 15px;
+    border-top-left-radius: 6px;
+    overflow: hidden;
+    border-top-right-radius: 6px;
+}
+.row-fluid .column {
+    font-size: 14px;
+    overflow: auto;
+}
+.column h4 {
+    margin: 0 0 5px 0;
+}
+.column hr {
+    height: 1px;
+}
+.showVideo {
+    left: 0 !important;
+    opacity: 1 !important;
+}
+.closeVid {
+    position: absolute;
+    top: 15px;
+    color: black;
+    outline: none;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    left: 275px;
+    text-align: center;
+    z-index: 1;
+    font-size: 14px;
+    border: 1px solid rgb(166,166,166);
+    padding: 1px 10px;
+    cursor: pointer;
+}
+.homeMenu {
+    z-index: 1;
+    margin-left: 5px;
+    transform: translateY(-1px);
+}
+.itineraries-stateroom-tablet {
+    display: none;
+}
+.slideLeft.ng-leave {
+    -webkit-animation: slideOutLeft 0.5s both ease-out;
+    -moz-animation: slideOutLeft 0.5s both ease-out;
+    animation: slideOutLeft 0.5s both ease-out;
+}
+.slideLeft.ng-enter {
+    -webkit-animation: slideInRight 0.5s both ease-out;
+    -moz-animation: slideInRight 0.5s both ease-out;
+    animation: slideInRight 0.5s both ease-out;
+}
+@keyframes slideOutLeft         { to { transform: translateX(-100%);         } }
+@-moz-keyframes slideOutLeft    { to { -moz-transform: translateX(-100%);    } }
+@-webkit-keyframes slideOutLeft { to { -webkit-transform: translateX(-100%); } }
+
+@keyframes slideInRight         {
+    from { transform: translateX(100%); }
+    to   { transform: translateX(0);    }
+}
+@-moz-keyframes slideInRight {
+    from { -moz-transform: translateX(100%); }
+    to   { -moz-transform: translateX(0);    }
+}
+@-webkit-keyframes slideInRight {
+    from { -webkit-transform: translateX(100%); }
+    to   { -webkit-transform: translateX(0);    }
+}
+
+.slideRight.ng-leave {
+    -webkit-animation: slideOutRight 0.5s both ease-out;
+    -moz-animation: slideOutRight 0.5s both ease-out;
+    animation: slideOutRight 0.5s both ease-out;
+}
+.slideRight.ng-enter {
+    -webkit-animation: slideInLeft 0.5s both ease-out;
+    -moz-animation: slideInLeft 0.5s both ease-out;
+    animation: slideInLeft 0.5s both ease-out;
+}
+@keyframes slideOutRight         { to { transform: translateX(100%);         } }
+@-moz-keyframes slideOutRight    { to { -moz-transform: translateX(100%);    } }
+@-webkit-keyframes slideOutRight { to { -webkit-transform: translateX(100%); } }
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to   { transform: translateX(0);     }
+}
+@-moz-keyframes slideInLeft {
+    from { -moz-transform: translateX(-100%); }
+    to   { -moz-transform: translateX(0);     }
+}
+@-webkit-keyframes slideInLeft {
+    from { -webkit-transform: translateX(-100%); }
+    to   { -webkit-transform: translateX(0);     }
+}
+a #left, a #right, a #up, a #down {
+    cursor: pointer;
+}
+#dkThreeOne, #dkThreeTwo, #dkThreeThree, #dkThreeFour, #dkThreeFive,#dkFourOne, #dkFourThree, #dkFourFour, #dkFourFive, #dkFiveOne, #dkFiveTwo, #dkFiveThree, #dkFiveFour, #dkFiveFive, #dkSixOne, #dkSixTwo, #dkSixThree, #dkSixFour, #dkSevenOne, #dkSevenTwo, #dkSevenThree, #dkSevenFour, #dkSevenFive, #vikingBar, #theSpa, #vikingRoom, #theRestaurant, #theAtrium, #theater {
+    background-color: rgb(72,124,156);
+    border: 1px solid black;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+button.learnMore, .btnsActive, .exploreHolder, .itineraries, .itineraries .prev, .stateroom .prev, .itineraries .next, .staterooms.next, .leftArrow, .leftArrowSM, .rightArrow, .rightArrowSM, .stateroom, .topTier, .discoverShip, .deckOne, .deckTwo, .deckThree, .deckFour, .deckFive, .deckSix, .deckSeven, .deckEight, .deckNine, .deckA, .showOnPortraitView, .interactiveSpace, #dkThreeOne, #dkThreeTwo, #dkThreeFour, #dkThreeThree, #dkThreeFive, #dkFourOne, #dkFourThree, #dkFourFour, #dkFourFive, #dkFiveOne, #dkFiveTwo, #dkFiveThree, #dkFiveFour, #dkFiveFive, #dkSixOne, #dkSixTwo, #dkSixThree, #dkSixFour, #dkSevenOne, #dkSevenTwo, #dkSevenThree, #dkSevenFour, #dkSevenFive, .galleryHolder, .apiContainer, .apis, .deckNum, .detailPanel, .discoverImg, #h5Btn, .closeGallery, #vikingRoom, #vikingBar, #theSpa, #theRestaurant, #theAtrium, #theater {
+    position: absolute;
+}
+a {
+    outline: 0;
+    color: #676768;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.activeBtnOne,
+.activeBtnTwo {
+    background-color: #b10a32 !important;
+    color: white !important;
+}
+.activeBtnOne a, .activeBtnTwo a {
+    color: white !important;
+}
+.apis {
+    border: 1px solid black;
+    top: 62px;
+    right: 30px;
+    border-radius: 4px;
+    z-index: 1;
+}
+.apiBtn {
+    color: #2b3d52;
+    background-color: #f5f5f5;
+    right: 17px;
+    text-align: center;
+    top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 1px 10px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 3px;
+}
+.apiContainer {
+    width: calc(100% - 2px);
+    height: calc(100% - 57px);
+    background-color: white;
+    top: 46px;
+    left: -110%;
+    transition: left .5s;
+    z-index: 1;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.show-weather {
+    left: 1px !important;
+}
+button.learnMore {
+    background-color: #777777;
+    border-radius: 6px;
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    font-size: 10pt;
+    letter-spacing: 0.5pt;
+    padding: 10px 0;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+.btnsActive {
+    background-color: black;
+    width: 100%;
+    height: calc(100% - 0px);
+    top: 0;
+    opacity: 0.85;
+    z-index: 21;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.blue {
+    background-color: #2b3d52 !important;
+}
+.closeGallery {
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid black;
+    font-size: 14px;
+    padding: 1px 10px;
+    margin: 0;
+    z-index: 10;
+    right: 20px;
+    bottom: 20px;
+}
+.collapsing {
+    transition: height 0.6s;
+}
+.color {
+    background-color: red !important;
+    opacity: 0.7;
+}
+.container {
+    position: relative;
+    margin: 15px auto 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 6px;
+    max-width: 1200px;
+    max-height: 630px;
+}
+.controls {
+    text-align: right;
+    position: absolute;
+    left: 390px;
+    top: 16px;
+    font-size: 14px;
+}
+.deckHolder {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    top: 280px;
+}
+.deckNum {
+    top: 10px;
+    margin: 0
+}
+.detailPanel {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 101%;
+    top: -1px;
+    left: 0;
+    z-index: 1;
+}
+#dkThreeOne {
+    top: 54px;
+    left: 89px;
+}
+#dkThreeTwo {
+    top: 54px;
+    left: 216px;
+}
+#dkThreeThree {
+    top: 54px;
+    left: 345px;
+}
+#dkThreeFour {
+    top: 54px;
+    left: 550px;
+}
+#dkThreeFive {
+    top: 54px;
+    left: 761px;
+}
+#dkFourOne {
+    top: 56px;
+    left: 855px;
+}
+#dkFourThree {
+    top: 56px;
+    left: 690px;
+}
+#dkFourFour {
+    top: 56px;
+    left: 490px;
+}
+#dkFourFive {
+    top: 56px;
+    left: 260px;
+}
+#dkFiveOne {
+    top: 30px;
+    left: 75px;
+}
+#dkFiveTwo {
+    top: 97px;
+    left: 75px;
+}
+#dkFiveThree {
+    top: 65px;
+    left: 213px;
+}
+#dkFiveFour {
+    top: 65px;
+    left: 390px;
+}
+#dkFiveFive {
+    top: 65px;
+    left: 890px;
+}
+#dkSixOne {
+    top: 74px;
+    left: 886px;
+}
+#dkSixTwo {
+    top: 74px;
+    left: 746px;
+}
+#dkSixThree {
+    top: 74px;
+    left: 516px;
+}
+#dkSixFour {
+    top: 74px;
+    left: 206px;
+}
+#dkSevenOne {
+    top: 71px;
+    left: 385px;
+}
+#dkSevenTwo {
+    top: 71px;
+    left: 255px;
+}
+#dkSevenThree {
+    top: 71px;
+    left: 726px;
+}
+#dkSevenFour {
+    top: 71px;
+    left: 635px;
+}
+#dkSevenFive {
+    top: 71px;
+    left: 542px;
+}
+.deckOne, .deckTwo, .deckThree, .deckFour, .deckFive, .deckSix, .deckSeven, .deckEight, .deckNine, .deckA {
+    width: 1050px;
+    height: 50%;
+    min-width: 320px;
+    min-height: 110px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.discoverShip {
+    width: 1050px;
+    height: 350px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    image-rendering: -webkit-optimize-contrast;
+    background: transparent url(https://frontenddevelopment.tech/assets/vikingApp/loading.gif) scroll no-repeat center bottom / 90%;
+    background-size: cover;
+    border-radius: 6px;
+    transform: translateY(-50%);
+}
+.deckA, .deckOne, .deckTwo, .deckThree, .deckFour, .deckFive, .deckSix, .deckSeven, .deckEight, .deckNine {
+    background: transparent url(https://frontenddevelopment.tech/assets/vikingApp/shipDecks.png);
+}
+.deckA {
+    height: 70%;
+    background-position: 0 169px;
+    top: 18px;
+    background-size: 100%;
+}
+.deckOne {
+    background-position: 20px 5px;
+    height: 71%;
+    top: 18px;
+    background-size: 100%;
+}
+.deckTwo {
+    background-position: 10px -158px;
+    height: 68%;
+    top: 22px;
+    background-size: 100%;
+}
+.deckThree {
+    background-position: 0 -340px;
+    height: 62%;
+    top: 24px;
+    background-size: 100%;
+}
+.deckFour {
+    background-position: 44px -534px;
+    height: 65%;
+    top: 14px;
+    background-size: 102%;
+    background-repeat: no-repeat;
+}
+.deckFive {
+    background-position: 27px -717px;
+    height: 75%;
+    top: 10px;
+    background-size: 104%;
+}
+.deckSix {
+    background-position: 50px -868px;
+    height: 83%;
+    top: 3px;
+    background-size: 100%;
+}
+.deckSeven {
+    background-position: 36px -1099px;
+    height: 84%;
+    top: 5px;
+    background-size: 103%;
+}
+.deckEight {
+    background-position: 20px -1281px;
+    height: 88%;
+    top: -3px;
+    background-size: 103%;
+}
+.deckNine {
+    background-position: 0 184px;
+    height: 75%;
+    top: 19px;
+    background-size: 105%;
+}
+.detailsBtn {
+    background-color: #b10a32 !important;
+}
+.elemBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.elemText {
+    padding: 10px 0 0 10px;
+}
+.exploreHolder {
+    width: 180px;
+    height: 60px;
+    top: 62px;
+    right: 20px;
+    z-index: 1;
+    color: white;
+}
+.explore {
+    text-align: center;
+    font-size: 17px;
+    margin: -9px 0 0 0;
+}
+.fahrenheit {
+    font-size: 11pt;
+    margin: 0 0 0 1px;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.galleryHolder {
+    background-color: #ffffff;
+    transition: left .3s;
+    top: 0;
+    left: -110%;
+    margin: 0 auto;
+    z-index: 1;
+    text-align: center;
+    padding: 0 10px 10px 10px;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    z-index: 2;
+    display: grid;
+    width: calc(100% - 40px);
+    grid-template-columns: repeat(2,calc(50% - 0px));
+}
+.show-gallery {
+    left: 0 !important;
+}
+.project-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 63px;
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    z-index: 1;
+}
+.gallery {
+    max-width: 420px;
+    margin: 0 auto;
+}
+.galleryDesc {
+    text-align: left;
+    font-size: 14px;
+    line-height: 25px;
+    position: relative;
+    padding: 20px;
+}
+.itineraries-stateroom {
+    position: absolute;
+    bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,calc(50% - 5px));
+    grid-column-gap: 10px;
+    left: 22px;
+    z-index: 100;
+}
+
+#h5Btn {
+    cursor: pointer;
+    color: black;
+    font-size: 14px;
+    padding: 1px 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    top: 40px;
+}
+html {
+    height: 100%;
+    width: 100%;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-y: hidden;
+}
+.homePgImg {
+    background: transparent url(https://frontenddevelopment.tech/assets/vikingApp/homePgImg.jpg) scroll no-repeat 0 0 /1680px;
+    width: 100%;
+    height: 100%;
+}
+hr {
+    background-color: #b8af80;
+    margin: 0;
+    height: 5px;
+}
+.input-group {
+    width: 300px;
+    display: table;
+    margin: 0 auto;
+}
+.input-group .form-control,
+.input-group-addon,
+.input-group-btn {
+    display: table-cell;
+}
+.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    margin: 0px;
+    font-size: 10pt;
+    width: 300px;
+    padding: 5px 10px;
+}
+.input-group-addon {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+}
+.input-group-addon,
+.input-group-btn {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.input-group .form-control,
+.input-group-addon,
+.input-group-btn {
+    display: table-cell;
+}
+.interactiveSpace {
+    width: 452px;
+    height: 254px;
+    top: 27px;
+    right: 0;
+    border: 1px solid black;
+    left: 0;
+    margin: 0 auto;
+    background: transparent url(https://frontenddevelopment.tech/assets/vikingApp/8.jpg) scroll no-repeat 0 0 /100% 100%;
+    border-radius: 6px;
+}
+#items ul {
+    padding: 0 0 0 0;
+    margin: 0;
+    list-style-type: none;
+}
+.itineraries_Alt {
+    background-color: white;
+    height: calc(100% - 65px);
+    z-index: 100;
+    width: calc(100% - 25px);
+    position: absolute;
+    overflow-x: scroll;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 15px;
+    border-radius: 6px;
+}
+.itineraries_Alt hr {
+    margin: 0 0 10px 0;
+}
+.itineraries {
+    background-color: white;
+    top: 15px;
+    right: 0;
+    min-width: 285px;
+    z-index: 100;
+    left: 0;
+    height: 520px;
+    width: 440px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+#itineraries,
+#stateroom {
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 1px 10px;
+    font-size: 14px;
+    position: relative;
+    background-color: white;
+}
+.itineraries-stateroom a {
+    color: black;
+}
+.itineraries h5,
+.itineraries_Alt h5,
+.stateroom h5 {
+    margin: 10px 0 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1pt;
+    text-align: center;
+    color: #2b3d52;
+    width: 100%;
+}
+.itineraries h4 {
+    text-align: center;
+    font-weight: 400;
+    margin: 10px 0 6px 0;
+    width: 100%;
+}
+.itineraries .prev,
+.itineraries .next {
+    cursor: pointer;
+}
+.itineraries .prev,
+.stateroom .prev {
+    width: 40px;
+    height: 60px;
+    top: 39%;
+    left: 0;
+    background: transparent url(https://frontenddevelopment.tech/assets/vikingApp/arrow-left.png) scroll no-repeat center center/61%;
+    z-index: 1;
+}
+.itineraries .next,
+.stateroom .next {
+    width: 40px;
+    height: 60px;
+    top: 39%;
+    right: 0;
+    background: transparent url(https://frontenddevelopment.tech/assets/vikingApp/arrow-left.png) scroll no-repeat center center/61%;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+.input-group-addon {
+    background-color: transparent;
+    border: none;
+}
+.layoutBtns {
+    background-color: #b10a32;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    font-size: 9pt;
+    margin: 5px auto;
+    padding: 3px 10px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+.layoutToggle {
+    display: block;
+    left: 0;
+    right: 0;
+    top: 6px;
+    margin: 0 auto;
+}
+.layoutContainer {
+    width: 430px;
+    margin: 0 auto 10px;
+    position: relative;
+}
+.leftArrow {
+    bottom: 50%;
+    left: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 5px 0;
+    transform: rotate(180deg);
+    transition: transform .3s;
+}
+.leftArrowSM {
+    bottom: 50%;
+    left: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 5px 0;
+}
+.leftArrowSM a {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.leftArrow a,
+.leftArrowSM a {
+    background: transparent url(https://frontenddevelopment.tech/assets/vikingApp/arrow-left.png) scroll no-repeat center center / 50%;
+    transform: rotate(180deg);
+}
+#loading-bar .bar {
+    background: #b10a32;
+}
+#loading-bar,
+#loading-bar-spinner {
+    pointer-events: none;
+    -webkit-pointer-events: none;
+    -webkit-transition: 350ms linear all;
+    -moz-transition: 350ms linear all;
+    -o-transition: 350ms linear all;
+    transition: 350ms linear all;
+}
+#loading-bar.ng-enter,
+#loading-bar.ng-leave.ng-leave-active,
+#loading-bar-spinner.ng-enter,
+#loading-bar-spinner.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+#loading-bar.ng-enter.ng-enter-active,
+#loading-bar.ng-leave,
+#loading-bar-spinner.ng-enter.ng-enter-active,
+#loading-bar-spinner.ng-leave {
+    opacity: 1;
+}
+#loading-bar .bar {
+    -webkit-transition: width 350ms;
+    -moz-transition: width 350ms;
+    -o-transition: width 350ms;
+    transition: width 350ms;
+    background: #b10a32;
+    position: fixed;
+    z-index: 10002;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-bottom-right-radius: 1px;
+    border-top-right-radius: 1px;
+}
+#loading-bar .peg {
+    position: absolute;
+    width: 70px;
+    right: 0;
+    top: 0;
+    height: 2px;
+    opacity: 0.45;
+    -moz-box-shadow: #29d 1px 0 6px 1px;
+    -ms-box-shadow: #29d 1px 0 6px 1px;
+    -webkit-box-shadow: #29d 1px 0 6px 1px;
+    box-shadow: #29d 1px 0 6px 1px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+#loading-bar-spinner {
+    display: block;
+    position: fixed;
+    z-index: 10002;
+    top: 10px;
+    left: 10px;
+}
+#loading-bar-spinner .spinner-icon {
+    width: 14px;
+    height: 14px;
+    border: solid 2px transparent;
+    border-top-color: #b10a32;
+    border-left-color: #b10a32;
+    border-radius: 50%;
+    -webkit-animation: loading-bar-spinner 400ms linear infinite;
+    -moz-animation: loading-bar-spinner 400ms linear infinite;
+    -ms-animation: loading-bar-spinner 400ms linear infinite;
+    -o-animation: loading-bar-spinner 400ms linear infinite;
+    animation: loading-bar-spinner 400ms linear infinite;
+}
+@-webkit-keyframes loading-bar-spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes loading-bar-spinner {
+    0% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes loading-bar-spinner {
+    0% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-ms-keyframes loading-bar-spinner {
+    0%   { -ms-transform: rotate(0deg); transform: rotate(0deg);     }
+    100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@keyframes loading-bar-spinner {
+    0%   { transform: rotate(0deg);   }
+    100% { transform: rotate(360deg); }
+}
+#loading-bar-spinner .spinner-icon {
+    border-top-color: #b10a32;
+    border-left-color: #b10a32;
+}
+#loading-bar .peg {
+    -moz-box-shadow: #2c3e50 1px 0 6px 1px;
+    -ms-box-shadow: #2c3e50 1px 0 6px 1px;
+    -webkit-box-shadow: #2c3e50 1px 0 6px 1px;
+    box-shadow: #2c3e50 1px 0 6px 1px;
+}
+#main {
+    width: calc(100% - 2px);
+    height: calc(100% - 55px);
+    position: relative;
+    border: 1px solid lightgrey;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+#mainImg {
+    width: calc(100% - 2px);
+    height: auto;
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+#myThumbs {
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+}
+#maps {
+    position: absolute;
+    right: 0;
+    top: 270px;
+    height: calc(100% - 269px);
+    width: calc(100% - -1px);
+    border-left: 1px solid #2b3d52;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.mapsSearching {
+    background-image: url(https://frontenddevelopment.tech/assets/vikingApp/loading.gif);
+}
+#myContent {
+    width: 96%;
+    margin: 0 auto;
+}
+#myContent p {
+    font-size: 10pt;
+    margin: 0;
+    color: #676768;
+}
+#myContent article:nth-child(1) {
+    display: inline-block;
+    width: 100%;
+}
+#myContent article:nth-child(2) {
+    float: left;
+    margin: 10px 2% 0 0;
+    min-width: 23%;
+}
+#myContent article:nth-child(3) {
+    float: right;
+    padding: 0px 15px 17px 0px;
+    text-align: center;
+    width: 20%;
+}
+.myImg {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 200px;
+    height: 110px;
+    float: right;
+    margin: 0 0 1px 10px;
+    overflow: hidden;
+}
+.myImg img {
+    width: 100%;
+}
+#myTable,
+.weatherTable {
+    font-size: 10pt;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+#myTable tbody tr {
+    color: #555;
+}
+#mytable tbody tr td {
+    text-align: left;
+    padding: 6px 7px;
+}
+#myTable thead tr {
+    cursor: pointer;
+    background: #dfe6ed;
+}
+#myTable thead tr th {
+    font-weight: bold;
+    padding: 12px 30px;
+    padding-left: 10px;
+}
+#myTable thead tr th span {
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+#myTable thead tr th.headerSortUp,
+#myTable thead tr th.headerSortDown {
+    background: #acc8dd;
+}
+#myTable tbody tr td.lalign {
+    text-align: left;
+}
+#myTable a {
+    text-decoration: underline;
+}
+.oAutoX {
+    overflow-x: auto;
+}
+.nav-tabs > li,
+.nav-pills > li {
+    float: none;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    cursor: pointer;
+}
+.show-nav {
+    max-height: 375px !important;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 2px 3px 6px 4px rgba(0,0,0,.75);
+}
+.navTabs {
+    width: calc(100% - 500px);
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nav-tabs,
+.nav-pills {
+    text-align: center;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white !important;
+}
+#discover {
+    color: white !important;
+    transform: scale(.7) translateY(-5px);
+    width: 45px;
+    height: 50px;
+    position: relative;
+    float: left;
+}
+#discover .bottom {
+    position: absolute;
+    height: 3px;
+    background-color: white;
+    width: 25px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#discover .left {
+    height: 20px;
+    width: 3px;
+    position: absolute;
+    background-color: white;
+    bottom: 10px;
+    right: 8px;
+}
+#discover .top-right {
+    width: 3px;
+    height: 23px;
+    transform: rotate(50deg);
+    position: absolute;
+    background-color: white;
+    bottom: 22px;
+    left: 13px;
+}
+#discover .top-left {
+    width: 3px;
+    height: 23px;
+    transform: rotate(-50deg);
+    position: absolute;
+    background-color: white;
+    bottom: 22px;
+    right: 13px;
+}
+#discover .right {
+    height: 20px;
+    width: 3px;
+    position: absolute;
+    background-color: white;
+    bottom: 10px;
+    left: 8px;
+}
+p.destination {
+    text-align: center;
+    margin: 0 0 8px;
+    font-size: 12pt;
+    font-weight: 300;
+}
+.page {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.pageContent {
+    width: calc(100% - 40px);
+    position: relative;
+    padding: 15px 20px 0 20px;
+    background-color: #f5f5f5;
+    height: calc(100% - 15px);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    overflow: hidden;
+}
+.pageContent > p {
+margin: 0;
+    position: relative;
+    z-index: 1;
+    color: black;
+    display: inline-block;
+}
+.pageContent h4,
+.pageContent h5 {
+    display: inline-block;
+    z-index: 1;
+}
+.faux-button {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+.panel {
+    position: relative;
+}
+.panel-title > a {
+    display: block;
+    padding: 7px 15px;
+}
+.panel-group .panel:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+.panel-heading {
+    padding: 5px 15px !important;
+    background-color: lightgrey;
+}
+.panel-body {
+    padding: 15px 0 15px 30px;
+    font-size: 14px;
+}
+.panel-title {
+    cursor: pointer;
+    width: 100%;
+    margin: 0;
+}
+.panel-wrapper {
+    transition: all .5s;
+    max-height: 200px;
+    overflow: hidden;
+    margin-left: 30px;
+    font-size: 14px;
+    padding: 10px 0;
+}
+.panel-default {
+     max-height: 0 !important;
+     padding: 0 !important;
+}
+.rightArrow {
+    right: 1px;
+    bottom: 50%;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 5px 0;
+    transition: transform .3s;
+}
+.rightArrowSM {
+    bottom: 50%;
+    right: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 5px 0;
+}
+.rightArrowSM a {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.rightArrow a,
+.leftArrow a {
+    display: block;
+    width: 50px;
+    height: 40px;
+}
+.rightArrow a,
+.rightArrowSM a {
+    background: transparent url(https://frontenddevelopment.tech/assets/vikingApp/arrow-left.png) scroll no-repeat center center / 56%;
+    transform: rotate(180deg);
+}
+#sortInput {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgb(221,221,221);
+    outline: none;
+}
+.sortTable {
+    margin-right: auto;
+    margin-left: auto;
+}
+.specs {
+    width: 100%;
+    margin: 20px auto 0 auto;
+    color: #333333;
+    border-top: 3px solid lightgrey;
+}
+.specs tr:first-child {
+    text-align: center;
+    font-size: 14pt;
+}
+.specs tr {
+    font-size: 7pt;
+    text-align: center;
+}
+.stateroom {
+    background-color: #ffffff;
+    top: 10px;
+    display: block !important;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    height: calc(100% - 80px);
+    overflow: scroll;
+    border-radius: 6px;
+    -webkit-overflow-scrolling: touch;
+    width: calc(100% - 30px);
+    padding: 0 0 20px 0;
+    z-index: 100;
+}
+.stateroom .tripPhoto {
+    width: 100%;
+    max-height: 150px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: transparent;
+}
+.tabularData {
+    width: 100%;
+    font-size: 10pt;
+    color: #676768;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.table-bordered {
+    border: 1px solid #ddd;
+}
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+    border-bottom-width: 2px;
+}
+.table-bordered > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+    border: 1px solid #ddd;
+    min-width: 100px;
+}
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+    padding: 8px;
+    line-height: 1.42857;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+.table > caption + thead > tr:first-child > td,
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > td,
+.table > thead:first-child > tr:first-child > th {
+    border-top: 0px none;
+}
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+    border-bottom-width: 2px;
+}
+.tab-content {
+    color: white;
+}
+.templateWrapper {
+    position: relative;
+    height: calc(100% - 90px);
+    margin: 10px 50px 0 50px;
+}
+.tripPhoto {
+    width: calc(100% - 80px);
+    margin: 0 auto;
+}
+#theRestaurant {
+    width: 40px;
+    height: 40px;
+    left: 147px;
+    top: 67px;
+}
+#theAtrium {
+    width: 40px;
+    height: 40px;
+    left: 382px;
+    top: 67px;
+}
+#theater {
+    top: 67px;
+    opacity: 0.7;
+    left: 805px;
+}
+#myThumbs .thumbs:first-child {
+    border-bottom-left-radius: 6px;
+}
+#myThumbs .thumbs:last-child {
+    border-bottom-right-radius: 6px;
+}
+.thumbs {
+    width: 100%;
+    display: block;
+    margin-top: 2px;
+    padding: 0;
+    border: 1px solid white;
+    cursor: pointer;
+    background: transparent url(https://frontenddevelopment.tech/assets/vikingApp/loading.gif) scroll no-repeat center center / 100%;
+}
+.topTier {
+    right: 37px;
+    top: 26px;
+    display: block;
+}
+.topTier button:nth-child(1) {
+    margin: 0 10px 0 0;
+}
+.touchPointHolder {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.touchPointHolder span {
+    margin: 0 10px;
+    font-size: 10pt;
+    cursor: pointer;
+}
+.tripPhoto img {
+    width: 100%;
+    border-radius: 4px;
+}
+.tripPhoto ul li {
+    text-align: left;
+    list-style-type: none;
+}
+ul {
+    padding: 0;
+}
+#searchingCity {
+    position: absolute;
+    width: 100%;
+    font-size: 13pt;
+    height: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    top: 33px;
+}
+#temp {
+    margin: 40px 0 10px 10px;
+    font-size: 14px;
+    text-align: left;
+    padding: 15px 15px 0 15px;
+    line-height: 25px;
+}
+.text {
+    position: absolute;
+    font-size: 16px;
+    text-transform: capitalize;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+}
+#theSpa {
+    top: 32px;
+    left: 785px;
+}
+ul.details {
+    list-style-type: none;
+    text-align: left;
+    line-height: 22px;
+    padding: 20px;
+    font-size: 13px;
+}
+.weatherAPI .apiBtn {
+    position: static;
+    outline: none;
+    padding: 1px 10px;
+    border: 1px solid #2b3d52;
+    float: left;
+    margin: 0 0 0 10px;
+}
+.weatherAPI {
+    width: 100%;
+    border: none;
+    margin: 0 auto;
+    background-color: white;
+    height: 200px;
+    z-index: 999;
+    position: absolute;
+    top: 14px;
+}
+.weatherAPI input {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 1px 10px;
+    border: none;
+    float: left;
+    margin: 0 0 0 25px;
+    border: 1px solid #2b3d52;
+    width: 300px;
+    border-radius: 3px;
+    font-size: 14px;
+    outline: none;
+}
+#videoPlayer {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 90px);
+    left: -110%;
+    background-color: #457b9d;
+    transition: all .5s;
+    margin: 0 auto;
+    cursor: pointer;
+    top: 55px;
+    opacity: 0;
+}
+#vikingBar {
+    top: 97px;
+    left: 444px;
+}
+#vikingRoom {
+    top: 32px;
+    left: 443px;
+}
+.videoBG {
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+}
+.white {
+    color: white;
+}
+#wintergarden {
+    width: 42px;
+    height: 8px;
+    top: 70px;
+    right: 468px;
+}
+.wrapper {
+    position: absolute;
+    border: 1px solid black;
+    width: 410px;
+    height: 215px;
+    background-color: #2b3d52;
+    color: white;
+    bottom: 50px;
+    right: 20px;
+}
+.youTubeVid {
+    border: 1px solid white;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0 !important;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 20px;
+    transform: scale(.6) translateY(-50%);
+    top: 100px;
+    border-radius: 6px
+}
+.youTubeVid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    #dkThreeOne, #dkThreeTwo, #dkThreeThree, #dkThreeFour, #dkThreeFive, #dkFourOne, #dkFourThree, #dkFourFour, #dkFourFive, #dkFiveOne, #dkFiveTwo, #dkFiveThree, #dkFiveFour, #dkFiveFive, #dkSixOne, #dkSixTwo, #dkSixThree, #dkSixFour, #dkSevenOne, #dkSevenTwo, #dkSevenThree, #dkSevenFour, #dkSevenFive, #vikingBar, #theSpa, #vikingRoom, #theRestaurant, #theAtrium, #theater {
+        width: 30px;
+        height: 30px;
+    }
+    #dkThreeOne {
+        top: 46px;
+        left: 565px;
+    }
+    #dkThreeTwo {
+        top: 46px;
+        left: 96px;
+    }
+    #dkThreeThree {
+        top: 46px;
+        left: 186px;
+    }
+    #dkThreeFour {
+        top: 46px;
+        left: 294px;
+    }
+    #dkThreeFive {
+        top: 46px;
+        left: 481px;
+    }
+    #dkFourOne {
+        top: 56px;
+        left: 590px;
+    }
+    #dkFourThree {
+        top: 56px;
+        left: 160px;
+    }
+    #dkFourFour {
+        top: 56px;
+        left: 490px;
+    }
+    #dkFourFive {
+        top: 56px;
+        left: 260px;
+    }
+    #dkFiveOne {
+        top: 19px;
+        left: 75px;
+    }
+    #dkFiveTwo {
+        top: 89px;
+        left: 75px;
+    }
+    #dkFiveThree {
+        top: 54px;
+        left: 213px;
+    }
+    #dkFiveFour {
+        top: 55px;
+        left: 300px;
+    }
+    #dkFiveFive {
+        top: 55px;
+        left: 505px;
+    }
+    #dkSixOne {
+        top: 55px;
+        left: 115px;
+    }
+    #dkSixTwo {
+        top: 55px;
+        left: 615px;
+    }
+    #dkSixThree {
+        top: 55px;
+        left: 495px;
+    }
+    #dkSixFour {
+        top: 55px;
+        left: 310px;
+    }
+    #dkSevenOne {
+        top: 45px;
+        left: 75px;
+    }
+    #dkSevenTwo {
+        top: 45px;
+        left: 145px;
+    }
+    #dkSevenThree {
+        top: 45px;
+        left: 333px;
+    }
+    #dkSevenFour {
+        top: 45px;
+        left: 545px;
+    }
+    #dkSevenFive {
+        top: 45px;
+        left: 462px;
+    }
+    .textSearching {
+        margin-top: 50px !important;
+    }
+    .discoverShip, .deckOne, .deckTwo, .deckThree, .deckFour, .deckFive, .deckSix, .deckSeven, .deckEight, .deckNine, .deckA {
+        background-size: cover;
+        width: 775px;
+        height: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 6px;
+    }
+    .deckA {
+        background-position: 0 135px;
+        height: 130px;
+        top: 95px;
+    }
+    .deckOne {
+        background-position: 15px 0;
+        height: 115px;
+        top: 95px;
+    }
+    .deckTwo {
+        background-position: 10px -112px;
+        height: 130px;
+        top: 95px;
+    }
+    .deckThree {
+        background-position: -2px 935px;
+        height: 120px;
+        top: 95px;
+        width: 765px;
+    }
+    .deckFour {
+        background-position: 33px -370px;
+        height: 130px;
+        top: 90px;
+    }
+    .deckFive {
+        background-position: 20px -640px;
+        height: 140px;
+        top: 95px;
+    }
+    .deckSix {
+        background-position: 48px -640px;
+        height: 140px;
+        top: 95px;
+    }
+    .deckSeven {
+        background-position: 35px -795px;
+        height: 130px;
+        top: 102px;
+    }
+    .deckEight {
+        background-position: 10px 260px;
+        height: 130px;
+        top: 95px;
+    }
+    .deckNine {
+        background-position: 0 133px;
+        height: 130px;
+        top: 97px;
+    }
+    #vikingRoom {
+        top: 20px;
+        left: 383px;
+    }
+    #theSpa {
+        top: 45px;
+        left: 680px;
+    }
+    #vikingBar {
+        left: 383px;
+        top: 65px;
+    }
+    #theRestaurant {
+        left: 122px;
+        top: 47px;
+    }
+    #theater {
+        top: 47px;
+        left: 620px;
+    }
+    #theAtrium {
+        left: 397px;
+        top: 47px;
+    }
+    .itineraries-stateroom {
+        display: grid;
+        bottom: 0;
+    }
+    .galleryHolder {
+        height: auto;
+    }
+    .closeVid {
+        top: 65px;
+        left: 20px;
+    }
+    .controls {
+        left: 187px;
+        top: 68px;
+        z-index: 1;
+    }
+    .pageContent h1 {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #dkThreeOne, #dkThreeTwo, #dkThreeThree, #dkThreeFour, #dkThreeFive, #dkFourOne, #dkFourThree, #dkFourFour, #dkFourFive, #dkFiveOne, #dkFiveTwo, #dkFiveThree, #dkFiveFour, #dkFiveFive, #dkSixOne, #dkSixTwo, #dkSixThree, #dkSixFour, #dkSevenOne, #dkSevenTwo, #dkSevenThree, #dkSevenFour, #dkSevenFive, #vikingBar, #theSpa, #vikingRoom {
+        border-radius: 20px;
+        width: 25px;
+        height: 25px;
+    }
+    .itineraries-stateroom {
+        bottom: 10px;
+    }
+    .stateroom .tripPhoto {
+        float: left;
+        max-width: 350px;
+        padding-right: 20px;
+        overflow: unset;
+        max-height: fit-content;
+        margin-top: 10px;
+    }
+    ul.details {
+        float: left;
+        max-width: calc(50% - 20px);
+        padding: 0;
+        margin: 0;
+    }
+    .column {
+        clear: both;
+        padding-bottom: 30px;
+    }
+    .row-fluid {
+        display: block;
+    }
+    .project-title {
+        top: 13px;
+        z-index: 99;
+        text-align: left;
+        right: unset;
+        margin: 0 0 0 75px;
+        width: unset;
+        color: white;
+        font-size: 16px;
+    }
+    .gallery-thumbs {
+        background: none;
+        z-index: 5;
+        display: flex !important;
+        justify-content: center;
+        position: absolute !important;
+        left: unset !important;
+        top: 100% !important;
+        right: 0;
+        margin: 0 auto;
+        width: 100% !important;
+    }
+    .gallery-thumbs > div {
+        position: unset !important;
+    }
+    .gallery-thumbs > div:not(:last-child){
+        margin-right: 15px;
+    }
+    .apis {
+        right: 20px;
+    }
+    .active-pg-home .leftArrow {
+        transform: rotate(180deg) translateX(30px) !important;
+    }
+   .active-pg-home .rightArrow {
+        transform: translateX(30px) !important;
+    }
+    .nav-wrapper {
+        position: absolute;
+        bottom: 10px;
+        width: 120px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transition: width .3s;
+    }
+    #discover {
+        margin-left: 20px;
+        float: none;
+        position: absolute;
+    }
+    .galleryHolder {
+        height: calc(100% - 40px);
+        display: block;
+    }
+    #h5Btn {
+        top: unset;
+        bottom: 18px;
+        right: 0;
+        left: 0;
+        width: 95px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 1px 0;
+    }
+    .hamburger {
+        position: absolute;
+        color: white;
+        font-size: 30px;
+        z-index: 10;
+        right: 20px;
+        cursor: pointer;
+        display: block;
+    }
+    #appNav {
+        overflow: unset;
+        margin-left: 15px;
+        margin-top: 45px;
+        padding-bottom: 20px;
+    }
+    #appNav li {
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    nav > div:first-child {
+        max-height: 45px;
+        transition: all .5s;
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        overflow: hidden;
+        background-color: #457b9d;
+    }
+    .apiContainer {
+        height: calc(100% - 95px);
+    }
+    #videoPlayer {
+        height: calc(100% - 135px);
+    }
+    .rightArrow {
+        position: unset;
+        float: right;
+        height: 40px;
+        padding: 0;
+    }
+    .deckNum {
+        top: 10px;
+    }
+    .nav-wrapper.active-pg-home {
+        width: 180px;
+    }
+    .leftArrow {
+        height: 40px;
+        position: unset;
+        transition: left .25s;
+        width: 50px;
+        float: left;
+        padding: 0;
+    }
+    .youTubeVid {
+        transform: scale(0.8) translateY(-50%);
+        top: 40%;
+    }
+    .page {
+        height: 100%
+    }
+    #main {
+        height: calc(100% - 50px);
+    }
+    .itineraries {
+        height: calc(100% - 90px);
+        top: 45%;
+        transform: translateY(-50%);
+        min-width: unset;
+    }
+    .itineraries_Alt {
+        margin: 15px;
+        width: calc(100% - 30px);
+        height: calc(100% - 30px);
+        border-radius: 4px;
+        top: 0;
+    }
+    .stateroom {
+        height: calc(100% - 45px);
+        top: 10px;
+    }
+    .btnsActive {
+        height: 100%;
+    }
+    #dkThreeOne {
+        top: 40px;
+        left: 520px;
+    }
+    #dkThreeTwo {
+        top: 39px;
+        left: 77px;
+    }
+    #dkThreeThree {
+        top: 39px;
+        left: 156px;
+    }
+    #dkThreeFour {
+        top: 39px;
+        left: 288px;
+    }
+    #dkThreeFive {
+        top: 39px;
+        left: 441px;
+    }
+    #dkFourOne {
+        top: 42px;
+        left: 64px;
+    }
+    #dkFourThree {
+        top: 42px;
+        left: 180px;
+    }
+    #dkFourFour {
+        top: 42px;
+        left: 263px;
+    }
+    #dkFourFive {
+        top: 42px;
+        left: 553px;
+    }
+    #dkFiveOne {
+        top: 16px;
+        left: 75px;
+    }
+    #dkFiveTwo {
+        top: 74px;
+        left: 73px;
+    }
+    #dkFiveThree {
+        top: 45px;
+        left: 150px;
+    }
+    #dkFiveFour {
+        top: 45px;
+        left: 273px;
+    }
+    #dkFiveFive {
+        top: 45px;
+        left: 402px;
+    }
+    #dkSixOne {
+        top: 53px;
+        left: 270px;
+    }
+    #dkSixTwo {
+        top: 53px;
+        left: 126px;
+    }
+    #dkSixThree {
+        top: 53px;
+        left: 346px;
+    }
+    #dkSixFour {
+        top: 53px;
+        left: 576px;
+    }
+    #dkSevenOne {
+        top: 45px;
+        left: 470px;
+    }
+    #dkSevenTwo {
+        top: 45px;
+        left: 93px;
+    }
+    #dkSevenThree {
+        top: 45px;
+        left: 169px;
+    }
+    #dkSevenFour {
+        top: 45px;
+        left: 258px;
+    }
+    #dkSevenFive {
+        top: 45px;
+        left: 362px;
+    }
+    .detailPanel {
+        width: 100%;
+    }
+    .container {
+        height: 100%;
+    }
+    .deckOne, .deckTwo, .deckThree, .deckFour, .deckFive, .deckSix, .deckSeven, .deckEight, .deckNine, .deckA {
+        width: 704px;
+    }
+    .discoverShip {
+        width: 95%;
+        height: 55%;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 4px;
+        background-size: cover;
+    }
+    .deckA {
+        height: 100%;
+        height: 49%;
+        background-position: 0 110px;
+    }
+    #theater {
+        top: 39px;
+        width: 25px;
+        height: 25px;
+        left: 570px;
+    }
+    .deckOne {
+        background-position: 15px 0;
+        height: 48%;
+    }
+    .deckTwo {
+        background-position: 10px 970px;
+        height: 47%;
+    }
+    .deckThree {
+        background-position: 5px -223px;
+        height: 45%;
+        background-size: 98%;
+    }
+    .deckFour {
+        background-position: 25px -345px;
+        height: 110px;
+        top: 97px;
+    }
+    .deckFive {
+        background-position: 30px -459px;
+        height: 110px;
+        top: 93px;
+    }
+    .deckSix {
+        background-position: 35px -580px;
+        height: 130px;
+        top: 95px;
+    }
+    .deckSeven {
+        background-position: 30px -715px;
+        height: 120px;
+        top: 95px;
+    }
+    .deckEight {
+        background-position: 25px -840px;
+        height: 120px;
+        top: 95px;
+    }
+    .deckNine {
+        background-position: 0px 120px;
+        height: 110px;
+        top: 95px;
+    }
+    .interactiveSpace {
+        width: 472px;
+        height: 265px;
+        border-radius: 4px;
+        top: 55px;
+    }
+    .touchPointHolder span {
+        margin: 0 5px;
+        font-size: 10pt;
+        cursor: pointer;
+    }
+    #vikingBar {
+        top: 61px;
+        left: 300px;
+    }
+    #theSpa {
+        top: 41px;
+        left: 560px;
+    }
+    #vikingRoom {
+        top: 18px;
+        left: 300px;
+    }
+    #theRestaurant {
+        top: 39px;
+        left: 98px;
+        height: 25px;
+        width: 25px;
+    }
+    #theAtrium {
+        top: 39px;
+        left: 280px;
+        height: 25px;
+        width: 25px;
+    }
+    #theatre {
+        top: 62px;
+        height: 70px;
+        width: 90px;
+        left: 563px;
+    }
+    .navTabs {
+        width: 75%;
+    }
+    .deckHolder-alt-layout > div [data-gallery] {
+        z-index: 999;
+        position: unset !important;
+        top: unset !important;
+        left: unset !important;
+        width: 15px !important;
+        height: 15px !important;
+    }
+    .pageContent {
+        height: calc(100% - 15px);
+    }
+   .itineraries-stateroom-tablet {
+        grid-template-columns: repeat(2,100px);
+        float: right;
+        margin-right: 60px;
+        transform: translateY(-3px);
+        bottom: unset;
+        left: unset;
+        display: grid;
+        grid-column-gap: 10px;
+    }
+    ui.details {
+        max-width: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .deckHolder-alt-layout {
+        height: unset;
+    }
+    .itineraries {
+        height: calc(100% - 50px);
+        top: 50%;
+        transform: translateY(-50%);
+        min-width: unset;
+    }
+    .stateroom .tripPhoto {
+        float: none;
+        max-width: inherit;
+        transform: none;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    .layoutContainer {
+        width: 100%;
+    }
+    .closeGallery {
+        z-index: 10;
+    }
+    .discoverShip {
+        height: 250px;
+        width: 96%;
+    }
+    .interactiveSpace {
+        margin-top: 50px;
+        width: 100%;
+        height: 40%;
+        position: unset;
+        top: unset;
+        background: transparent url(https://frontenddevelopment.tech/assets/vikingApp/8.jpg) scroll no-repeat 0 0 /100% auto;
+        border: none;
+    }
+    .touchPointHolder {
+        top: unset;
+        margin-top: 20px;
+    }
+    .gallery {
+        width: 100%;
+    }
+    .deckHolder {
+        top: 50%;
+        bottom: 0px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        overflow-x: auto;
+        -webkit-animation: teaser 1.75s ease-out forwards;
+        animation teaser: 1.75s ease-out forwards
+    }
+    
+    @-webkit-keyframes teaser {
+        0%  { left: -20%;  }
+        40% { left: 50%;   }
+        100% { left: 0;   }
+    }
+    @keyframes teaser {
+        0%  { left: -20%;  }
+        40% { left: 50%;   }
+        100% { left: 0;   }
+    }
+    
+    .deckHolder-alt-layout > div {
+        position: absolute;
+        top: 0;
+        display: block;
+        height: unset;
+        left: 10px;
+    }
+    .galleryHolder {
+        overflow: auto;
+    }
+    .galleryDesc {
+        position: unset;
+    }
+    #appNav #itineraries, #appNav #stateroom {
+        display: none;
+    }
+    .itineraries-stateroom-tablet {
+        display: grid;
+    }
+    #appNav .apiBtn {
+        display: none;
+    }
+    #searchWeather {
+        width: calc(100% - 140px);
+        outline: none;
+        text-align: left;
+        margin-left: 20px;
+        float: none;
+        display: block;
+    }
+    .weatherAPI .apiBtn {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .apis {
+        right: 20px;
+        top: 60px;
+    }
+    ul.details {
+        max-width: none;
+    }
+    .itineraries-stateroom {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px){
+    #appNav #itineraries, #appNav #stateroom {
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+    .youTubeVid {
+        transform: scale(1) translateY(-50%);
+        top: 50%;
+    }
+    .navTabs {
+        width: calc(100% - 30px);
+    }
+    #appNav #itineraries a, #appNav #stateroom a {
+        padding-left: 0;
+    }
+    .show-nav {
+        max-height: 475px !important;
+    }
+    #appNav .apiBtn {
+        border: none;
+        background-color: transparent;
+        right: unset;
+        top: unset;
+        padding: 10px 0 0 10px;
+        text-align: left;
+        color: white;
+        display: block;
+    }
+    .apis {
+        display: none;
+    }
+    .itineraries {
+        width: unset;
+        margin: 0 5px;
+    }
+}

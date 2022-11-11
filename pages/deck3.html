@@ -1,0 +1,61 @@
+<div class="pageContent">
+    <gallery></gallery>
+    <div class="deckHolder" ng-class="{'deckHolder-alt-layout':gallery}">
+        <div class="deckThree" ng-class="{'gallery-thumbs':gallery}">
+            <div id="dkThreeOne" ng-click="myFunction($event)" data="0" data-gallery></div>
+            <div id="dkThreeTwo" ng-click="myFunction($event)" data="1" data-gallery></div>
+            <div id="dkThreeThree" ng-click="myFunction($event)" data="2" data-gallery></div>
+            <div id="dkThreeFour" ng-click="myFunction($event)" data="3" data-gallery></div>
+            <div id="dkThreeFive" ng-click="myFunction($event)" data="4" data-gallery></div>
+        </div>
+    </div>
+    <div ng-show="details" class="detailPanel">
+        <div class="navTabs">
+            <div class="panel-group" id="accordion">
+                <div class="panel" ng-click="openAccordionSection($event)">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            ES3
+                        </p>
+                    </div>
+                    <div class="panel-wrapper panel-default">
+                        <div id="items"></div>
+                    </div>
+                    <div class="faux-button" ng-click="openAccordionSection($event)"></div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            DV1
+                        </p>
+                    </div>
+                    <div class="panel-wrapper panel-default">
+                        {{ galleryContent[0] }}
+                    </div>
+                    <div class="faux-button" ng-click="openAccordionSection($event)"></div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            DV6
+                        </p>
+                    </div>
+                    <div class="panel-wrapper panel-default">
+                        {{ galleryContent[1] }}
+                    </div>
+                    <div class="faux-button" ng-click="openAccordionSection($event)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4 class="deckNum" ng-class="{'white' : details}">{{ deckNum }}</h4>
+    <p id="h5Btn" ng-class="{' white detailsBtn ' : details}" ng-click="detailsToggle(); features()" ng-bind="divText">
+        Details
+    </p>
+    <div class="interactiveSpace"></div>
+    <div class="touchPointHolder" ng-click="features()">
+        <span data="2" ng-click="captureClick($event)">ES3</span>
+        <span data="3" ng-click="captureClick($event)">DV1</span>
+        <span data="4" ng-click="captureClick($event)">DV6</span>
+    </div>
+</div>

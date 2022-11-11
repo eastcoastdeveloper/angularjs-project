@@ -1,0 +1,16 @@
+<div class="pageContent">
+    <p>Please Select a Deck</p>
+    <select class="homeMenu" ng-model="chosen" ng-options="x.choice for x in optObj" ng-change="selectedItemChanged()"></select>
+    <h1>{{chosen.choice}}</h1>
+    <div class="controls">
+        <a id="seeMore" href="{{ chosen.link }}" ng-show="showVideo">See More...</a>
+    </div>
+</div>
+
+<div class="discoverShip" ng-style="{backgroundImage: 'url(' + myBg + ')'}"></div>
+<button class="closeVid" ng-click="hideVideo()" ng-show="showVideo">Videos</button>
+<div id="videoPlayer" ng-class="{'showVideo' : myVideo}">
+    <div class="youTubeVid" my-youtube code="code"></div>
+</div>
+
+<discover-ship ng-show="preview"></discover-ship>
